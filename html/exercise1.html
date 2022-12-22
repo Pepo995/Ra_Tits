@@ -1,98 +1,98 @@
 <!DOCTYPE HTML>
 
 <html lang="en">
-    <head>
-        <meta charset = "utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Monthly tasks</title>
-    </head>
-    <body>
-        <header id="principalHeader">
-            <h1>Organize your monthly tasks</h1>
-        </header>
-        
-        <p>Create and control your monthly tasks to never miss one.
-            You can mark the tasks as completed. If you are reaching end of the month and
-            some task is not complete, we will send you a reminder! Each month the task will
-            automatically get back to uncompleted.
-        </p>
-        
-        <a href="#newTask">Create Task </a>
+  <head>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly tasks</title>
+  </head>
+  <body>
+    <header id="principalHeader">
+      <h1>Organize your monthly tasks</h1>
+    </header>
+    
+    <p>Create and control your monthly tasks to never miss one.
+      You can mark the tasks as completed. If you are reaching end of the month and
+      some task is not complete, we will send you a reminder! Each month the task will
+      automatically get back to uncompleted.
+    </p>
+    
+    <a href="#newTask">Create Task </a>
+    <br>
+    <a href="#users">All users </a>
+
+    <ul>
+      <li class="checklist">Pay co-living rent <input type="checkbox" id="coliving" name="coliving" value="coliving"></li>
+      <li class="checklist">Pay garage <input type="checkbox" id="garage" name="garage" value="garage"></li>
+      <li class="checklist">Pay car ensurance <input type="checkbox" id="cEnsurance" name="cEnsurance" value="cEnsurance"></li>
+    </ul>
+
+    <section>
+      <h2 id="users">Users</h2>
+
+      <a href="#principalHeader">Back </a>
+      <br><br>
+      <table>
+        <tr>
+          <th>First Name</th>
+          <th>Las Name</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>Alfreds</td>
+          <td>Futterkiste</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Francisco</td>
+          <td>Chang</td>
+          <td>Mexico</td>
+        </tr>
+        <tr>
+          <td>Ernst</td>
+          <td>Handel</td>
+          <td>Austria</td>
+        </tr>
+        <tr>
+          <td>Island</td>
+          <td>Trading</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Yoshi</td>
+          <td>Tannamuri</td>
+          <td>Canada</td>
+        </tr>
+        <tr>
+          <td>Giovanni</td>
+          <td>Rovelli</td>
+          <td>Italy</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2 id="newTask">New Task</h2>
+
+      <p>Create a new monthly task and keep track of it.</p>
+
+      <a href="#principalHeader">Back </a>
+      <br><br>
+      <form id="idFormNewTask"> 
+        <label for = "idName"> Name: </label>
         <br>
-        <a href="#users">All users </a>
+        <input type="text" id="idName" name="name" maxlength="25" required>
+        <br><br>
+        <label for = "idName"> Description: </label>
+        <br>
+        <input type="text" id="idDescription" name="description" maxlength="25" required>
+        <br><br>
+        <input type="button" value="Create">
+      </form>
 
-        <ul>
-            <li class="checklist">Pay co-living rent <input type="checkbox" id="coliving" name="coliving" value="coliving"></li>
-            <li class="checklist">Pay garage <input type="checkbox" id="garage" name="garage" value="garage"></li>
-            <li class="checklist">Pay car ensurance <input type="checkbox" id="cEnsurance" name="cEnsurance" value="cEnsurance"></li>
-        </ul>
-
-        <section>
-            <h2 id="users">Users</h2>
-
-            <a href="#principalHeader">Back </a>
-            <br><br>
-            <table>
-                <tr>
-                    <th>First Name</th>
-                    <th>Las Name</th>
-                    <th>Country</th>
-                </tr>
-                <tr>
-                    <td>Alfreds</td>
-                    <td>Futterkiste</td>
-                    <td>Germany</td>
-                </tr>
-                <tr>
-                    <td>Francisco</td>
-                    <td>Chang</td>
-                    <td>Mexico</td>
-                </tr>
-                <tr>
-                    <td>Ernst</td>
-                    <td>Handel</td>
-                    <td>Austria</td>
-                </tr>
-                <tr>
-                    <td>Island</td>
-                    <td>Trading</td>
-                    <td>UK</td>
-                </tr>
-                <tr>
-                    <td>Yoshi</td>
-                    <td>Tannamuri</td>
-                    <td>Canada</td>
-                </tr>
-                <tr>
-                    <td>Giovanni</td>
-                    <td>Rovelli</td>
-                    <td>Italy</td>
-                </tr>
-            </table>
-        </section>
-
-        <section>
-            <h2 id="newTask">New Task</h2>
-
-            <p>Create a new monthly task and keep track of it.</p>
-
-            <a href="#principalHeader">Back </a>
-            <br><br>
-            <form id="idFormNewTask"> 
-                <label for = "idName"> Name: </label>
-                <br>
-                <input type="text" id="idName" name="name" maxlength="25" required>
-                <br><br>
-                <label for = "idName"> Description: </label>
-                <br>
-                <input type="text" id="idDescription" name="description" maxlength="25" required>
-                <br><br>
-                <input type="button" value="Create">
-            </form>
-
-        </section>
+    </section>
 
 
-    </body>
+  </body>
 
 </html>
